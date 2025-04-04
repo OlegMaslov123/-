@@ -17,6 +17,10 @@ body{
     font-size: 24px; /* Размер шрифта для логотипа */
     font-weight: bold; /* Жирное начертание для логотипа */
 }
+.logoric{
+    text-decoration: none;
+    color: white;
+}
 .header .menu {
     display: flex; /* Горизонтальное расположение пунктов меню */
     align-items: center; /* Выравнивание пунктов меню по центру */
