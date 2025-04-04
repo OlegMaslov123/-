@@ -112,7 +112,7 @@ body{
 .fragment-2 {
     top: 20%; /* Отступ сверху для второго треугольника */
     left: 80%; /* Отступ слева для второго треугольника */
-    background-color: #4285f4; /* Синий цвет */
+    background-color: #1ea129; /* Синий цвет */
     transform: rotate(-5deg);
     clip-path: polygon(0 0, 100% 0, 50% 100%); 
     width: 30px; 
@@ -130,7 +130,7 @@ body{
 .fragment-4 {
     top: 80%; /* Отступ сверху для четвертого треугольника */
     left: 85%; /* Отступ слева для четвертого треугольника */
-    background-color: #34a853; /* Зеленый цвет */
+    background-color: #3463e4; /* Зеленый цвет */
     transform: rotate(16deg);
     clip-path: polygon(0 0, 100% 0, 50% 100%); 
     width: 30px; 
@@ -175,7 +175,7 @@ body{
 .fragment-9 {
     top: 19%; /* Отступ сверху для четвертого треугольника */
     left: 60%; /* Отступ слева для четвертого треугольника */
-    background-color: #006eff; 
+    background-color: #a917bd; 
     transform: rotate(10deg);
     clip-path: polygon(0 0, 100% 0, 50% 100%); 
     width: 30px; 
