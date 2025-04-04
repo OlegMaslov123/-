@@ -250,4 +250,8 @@ html {
     .menu-item{
         display: none;
     }
+@media(max-width: 800px){
+    .menu-item{
+        display: none;
+    }
 }
