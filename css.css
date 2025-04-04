@@ -249,6 +249,9 @@ html {
     .dropdown{
         left: 65px;
     }
+    .fragment-5{
+        left: 15%;
+    }
 }
 @media(max-width: 800px){
     .menu-item{
