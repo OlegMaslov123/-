@@ -11,8 +11,7 @@ body{
     align-items: center; /* Выравниваем элементы по вертикали */
     background-color: #3f51b5; /* Синий фон для шапки */
     color: white; /* Белый цвет текста */
-    padding: 10px 20px; /* Внутренние отступы */
-    object-fit: contain;
+    padding: 10px 20px; /* Внутренние отступы */ 
 }
 .header .logo {
     font-size: 24px; /* Размер шрифта для логотипа */
@@ -213,7 +212,7 @@ html {
 
     .dropdown {
         position: absolute; 
-        left: 150px;
+        left: 85px;
         top: 5px;
         display: inline-block;
     }
@@ -245,11 +244,12 @@ html {
         font-size: 16px;
     }
     .dropbtn{
-        font-size: 14px;
+        font-size: 10px;
     }
-    .menu-item{
-        display: none;
+    .dropdown{
+        left: 65px;
     }
+}
 @media(max-width: 800px){
     .menu-item{
         display: none;
