@@ -247,4 +247,7 @@ html {
     .dropbtn{
         font-size: 14px;
     }
+    .menu-item{
+        display: none;
+    }
 }
