@@ -147,7 +147,7 @@ body{
 }
 .fragment-6 {
     top: 85%; /* Отступ сверху для четвертого треугольника */
-    left: 75%; /* Отступ слева для четвертого треугольника */
+    left: 65%; /* Отступ слева для четвертого треугольника */
     background-color: #fffb00; 
     transform: rotate(-45deg);
     clip-path: polygon(0 0, 100% 0, 50% 100%); 
@@ -166,6 +166,15 @@ body{
 .fragment-8 {
     top: 23%; /* Отступ сверху для четвертого треугольника */
     left: 10%; /* Отступ слева для четвертого треугольника */
+    background-color: #006eff; 
+    transform: rotate(10deg);
+    clip-path: polygon(0 0, 100% 0, 50% 100%); 
+    width: 30px; 
+    height: 30px;
+}
+.fragment-9 {
+    top: 19%; /* Отступ сверху для четвертого треугольника */
+    left: 60%; /* Отступ слева для четвертого треугольника */
     background-color: #006eff; 
     transform: rotate(10deg);
     clip-path: polygon(0 0, 100% 0, 50% 100%); 
@@ -251,6 +260,29 @@ html {
     }
     .fragment-5{
         left: 9%;
+    }
+    .fragment-6{
+        left: 48%;
+    }
+    .fragment-1{
+        left: 32%;
+        top: 15%;
+    }
+    .fragment-9{
+        top: 6%; 
+        left: 52%;
+    }
+    .letter-o{
+        top: 28%;
+    }
+    .letter-ch{
+        top: 35%;
+    }
+    .letter-yo{
+        top: 42%;
+    }
+    .letter-r{
+        top: 49%;
     }
 }
 @media(max-width: 800px){
