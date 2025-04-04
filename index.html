@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Очёр</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+        <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+        
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+        
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          } 
+        }
+        </script>
+    <header class="header">
+        <div class="logo">Очёр</div>
+        <div class="menu">
+            <div class="menu-item">RU</div>
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Достопримечательности</button>
+                  <div id="myDropdown" class="dropdown-content">
+                    <a href="https://nashural.ru/dostoprimechatelnosti-urala/permskij-kraj/ocherskij-kraevedcheskij-muzej-im-a-v-netsvetaeva-istoriya-chto-posmotret-foto/?ysclid=m901xumt8q518126671">Музей</a>
+                    <a href="https://nashural.ru/dostoprimechatelnosti-urala/permskij-kraj/solnechnye-chasy-v-gorode-ochyor-pamyatnik-ocherskoj-stariny/?ysclid=m901x7q6qx247022093">Солнечные часы</a>
+                    <a href="https://nashural.ru/dostoprimechatelnosti-urala/permskij-kraj/park-permskogo-perioda-v-ochere-istoriya-chto-posmotret-i-foto/?ysclid=m901y6t313755398806">Парк пермского периода</a>
+                    <a href="https://nashural.ru/dostoprimechatelnosti-urala/permskij-kraj/gora-kokuj-muzej-rastitelnyh-drevnostej-pod-otkrytym-nebom/?ysclid=m901yod764767311329">Гора Кокуй</a>
+                    <a href="https://ocher.biblioteka-perm.ru/krajevedenije/o_rajone/krajevedcheskaja_enciklopedija_ochorskij_rajon/dostoprimechatelnosti/1937/">Сосновый бор</a>
+                    <a href="https://nashural.ru/dostoprimechatelnosti-urala/permskij-kraj/ocherskij-prud-i-ego-dostoprimechatelnosti/?ysclid=m901zzdfl4540303222">Очёрский пруд</a>
+                  </div>
+    </header>
+    <main class="content">
+        <div class="decorative-text">
+            <span class="letter-o">О</span> <!-- Буква "О" красного цвета -->
+            <span class="letter-ch">Ч</span> <!-- Буква "Ч" синего цвета -->
+            <span class="letter-yo">Ё</span> <!-- Буква "Ё" желтого цвета -->
+            <span class="letter-r">Р</span> <!-- Буква "Р" зеленого цвета -->
+        </div>
+        <img src="C:\Users\olegm\Downloads\orig.png" alt="Медведь убежал" class="bear-image">
+        <div class="fragments">
+            <div class="fragment fragment-1"></div> <!-- Желтый треугольник -->
+            <div class="fragment fragment-2"></div> <!-- Синий треугольник -->
+            <div class="fragment fragment-3"></div> <!-- Красный треугольник -->
+            <div class="fragment fragment-4"></div> <!-- Зеленый треугольник -->
+            <div class="fragment fragment-5"></div> <!-- Зеленый треугольник -->
+            <div class="fragment fragment-6"></div>
+            <div class="fragment fragment-7"></div>
+            <div class="fragment fragment-8"></div>
+    </main>
+    <footer class="footer">
+        © 2025 Очёр <!-- Текст футера -->
+    </footer>
+</body>
+</html>
