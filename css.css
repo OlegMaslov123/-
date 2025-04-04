@@ -12,6 +12,7 @@ body{
     background-color: #3f51b5; /* Синий фон для шапки */
     color: white; /* Белый цвет текста */
     padding: 10px 20px; /* Внутренние отступы */
+    object-fit: contain;
 }
 .header .logo {
     font-size: 24px; /* Размер шрифта для логотипа */
@@ -234,6 +235,11 @@ html {
         text-decoration: none;
         display: block;
         cursor: pointer;
+    }
+    
+    .dropdown a:hover {background-color: #3f51b5;}
+    
+    .show {display: block;}
 @media(max-width: 450px){
     .header .logo{
         font-size: 16px;
@@ -242,7 +248,3 @@ html {
         font-size: 14px;
     }
 }
-    
-    .dropdown a:hover {background-color: #3f51b5;}
-    
-    .show {display: block;}
