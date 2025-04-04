@@ -1,0 +1,241 @@
+/* Устанавливаем основные стили для всей страницы */
+body{
+    margin: 0; /* Убираем отступы по краям */
+    font-family: Arial, sans-serif; /* Устанавливаем шрифт */
+    background-color: #ffffff; /* Белый фон */
+}
+/* Стили для шапки страницы */
+.header {
+    display: flex; /* Располагаем элементы горизонтально */
+    justify-content: space-between; /* Пространство между логотипом и меню */
+    align-items: center; /* Выравниваем элементы по вертикали */
+    background-color: #3f51b5; /* Синий фон для шапки */
+    color: white; /* Белый цвет текста */
+    padding: 10px 20px; /* Внутренние отступы */
+}
+.header .logo {
+    font-size: 24px; /* Размер шрифта для логотипа */
+    font-weight: bold; /* Жирное начертание для логотипа */
+}
+.header .menu {
+    display: flex; /* Горизонтальное расположение пунктов меню */
+    align-items: center; /* Выравнивание пунктов меню по центру */
+}
+.header .menu-item {
+    margin-left: 20px; /* Расстояние между пунктами меню */
+    cursor: pointer; /* Курсор в виде руки при наведении */
+    font-weight: bold;
+}
+/* Стили для основного содержимого страницы */
+.content {
+    position: relative; /* Для позиционирования вложенных элементов */
+    height: calc(100vh - 50px); /* Высота страницы за вычетом шапки */
+    display: flex; /* Центровка содержимого */
+    justify-content: center; /* Горизонтальная центровка */
+    align-items: center; /* Вертикальная центровка */
+    overflow: hidden; /* Обрезка выходящих за пределы элементов */
+}
+/* Изображение медведя */
+.bear-image {
+    max-width: 50%; /* Ограничение ширины изображения */
+    position: absolute; /* Для наложения декоративных элементов */
+    z-index: 2; /* Устанавливаем уровень слоя */
+    left: 22%;
+    top: 10%;
+    height: 650px;
+    width: 650px;
+    object-fit: contain;
+}
+/* Контейнер для декоративного текста */
+.decorative-text {
+    position: relative; /* Для позиционирования букв вокруг медведя */
+    z-index: 0; /* Поверх изображения медведя */
+    width: 100%; 
+    height: 100%;
+}
+/* Стили для букв, которые располагаются вокруг медведя */
+.decorative-text span {
+    position: absolute; /* Точное позиционирование каждой буквы */
+    font-size: 10vw; /* Размер букв */
+    font-weight: bold; /* Жирное начертание текста */
+}  
+.letter-o {
+    top: 15%; /* Отступ сверху для буквы "О" */
+    left: 70%; /* Отступ слева для буквы "О" */
+    color: red; /* Красный цвет буквы */
+    transform: rotate(7deg); /* Наклон буквы */
+}
+.letter-ch {
+    top: 30%; /* Отступ сверху для буквы "Ч" */
+    left: 75%; /* Отступ слева для буквы "Ч" */
+    color: blue; /* Синий цвет буквы */
+    transform: rotate(-5deg); /* Легкий наклон буквы */
+}
+.letter-yo {
+    top: 45%; /* Отступ сверху для буквы "Ё" */
+    left: 80%; /* Отступ слева для буквы "Ё" */
+    color: yellow; /* Желтый цвет буквы */
+    transform: rotate(10deg); /* Поворот буквы */
+}
+.letter-r {
+    top: 60%; /* Отступ сверху для буквы "Р" */
+    left: 85%; /* Отступ слева для буквы "Р" */
+    color: green; /* Зеленый цвет буквы */
+    transform: rotate(-10deg); /* Легкий наклон буквы */
+}
+/* Контейнер для декоративных треугольников */
+.fragments {
+    position: absolute; /* Для точного позиционирования фрагментов */
+    width: 100%; /* Ширина контейнера совпадает с шириной страницы */
+    height: 100%; /* Высота контейнера совпадает с высотой страницы */
+    z-index: 0; /* Под изображением медведя */
+}
+/* Стили для декоративных треугольников */
+.fragment {
+    position: absolute; /* Точное позиционирование каждого треугольника */
+    width: 30px; /* Ширина треугольника */
+    height: 30px; /* Высота треугольника */
+    background-color: transparent; /* Прозрачный фон по умолчанию */
+    clip-path: polygon(0 0, 100% 0, 50% 100%); 
+    width: 30px; 
+    height: 30px;
+}
+.fragment-1 {
+    top: 15%; /* Отступ сверху для первого треугольника */
+    left: 20%; /* Отступ слева для первого треугольника */
+    background-color: #f47e00; /* Желтый цвет */
+    transform: rotate(-15deg);
+    clip-path: polygon(0 0, 100% 0, 50% 100%); 
+    width: 30px; 
+    height: 30px;
+}
+.fragment-2 {
+    top: 20%; /* Отступ сверху для второго треугольника */
+    left: 80%; /* Отступ слева для второго треугольника */
+    background-color: #4285f4; /* Синий цвет */
+    transform: rotate(-5deg);
+    clip-path: polygon(0 0, 100% 0, 50% 100%); 
+    width: 30px; 
+    height: 30px;
+}
+.fragment-3 {
+    top: 80%; /* Отступ сверху для третьего треугольника */
+    left: 10%; /* Отступ слева для третьего треугольника */
+    background-color: #ea4335; /* Красный цвет */
+    transform: rotate(95deg);
+    clip-path: polygon(0 0, 100% 0, 50% 100%); 
+    width: 30px; 
+    height: 30px;
+}
+.fragment-4 {
+    top: 80%; /* Отступ сверху для четвертого треугольника */
+    left: 85%; /* Отступ слева для четвертого треугольника */
+    background-color: #34a853; /* Зеленый цвет */
+    transform: rotate(16deg);
+    clip-path: polygon(0 0, 100% 0, 50% 100%); 
+    width: 30px; 
+    height: 30px;
+}
+.fragment-5 {
+    top: 45%; /* Отступ сверху для четвертого треугольника */
+    left: 20%; /* Отступ слева для четвертого треугольника */
+    background-color: #cb0e8c; 
+    transform: rotate(35deg); 
+    clip-path: polygon(0 0, 100% 0, 50% 100%); 
+    width: 30px; 
+    height: 30px;
+}
+.fragment-6 {
+    top: 85%; /* Отступ сверху для четвертого треугольника */
+    left: 75%; /* Отступ слева для четвертого треугольника */
+    background-color: #fffb00; 
+    transform: rotate(-45deg);
+    clip-path: polygon(0 0, 100% 0, 50% 100%); 
+    width: 30px; 
+    height: 30px;
+}
+.fragment-7 {
+    top: 40%; /* Отступ сверху для четвертого треугольника */
+    left: 75%; /* Отступ слева для четвертого треугольника */
+    background-color: #d00000; 
+    transform: rotate(-10deg);
+    clip-path: polygon(0 0, 100% 0, 50% 100%); 
+    width: 30px; 
+    height: 30px;
+}
+.fragment-8 {
+    top: 75%; /* Отступ сверху для четвертого треугольника */
+    left: 45%; /* Отступ слева для четвертого треугольника */
+    background-color: #006eff; 
+    transform: rotate(10deg);
+    clip-path: polygon(0 0, 100% 0, 50% 100%); 
+    width: 30px; 
+    height: 30px;
+}
+/* Стили для нижнего колонтитула */
+.footer {
+    background-color: #3f51b5; /* Цвет фона совпадает с шапкой */
+    color: white; /* Белый цвет текста */
+    text-align: center; /* Центровка текста */
+    padding: 10px; /* Внутренние отступы */
+}
+html {
+    scroll-behavior:  smooth;
+  }
+   
+  #блок1 {
+    height: 1000px;
+    background-color: #ffa3f6;
+  }
+   
+  #блок2 {
+    height: 1000px;
+    background-color: #fffc9c;
+  }
+  .hours{
+    display: block;
+    position: absolute;
+  }
+  .dropbtn {
+    background-color: #3f51b5;
+    color: white;
+    padding: 8px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #3f51b5;
+}
+
+    .dropdown {
+        position: absolute; 
+        left: 150px;
+        top: 5px;
+        display: inline-block;
+    }
+    
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #3f51b5;
+        min-width: 160px;
+        overflow: auto;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        list-style-type: none;
+    }
+    
+    .dropdown-content a {
+        color: rgb(255, 255, 255);
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        cursor: pointer;
+    }
+    
+    .dropdown a:hover {background-color: #3f51b5;}
+    
+    .show {display: block;}
