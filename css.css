@@ -234,7 +234,14 @@ html {
         text-decoration: none;
         display: block;
         cursor: pointer;
+@media(max-width: 450px){
+    .header .logo{
+        font-size: 16px;
     }
+    .dropbtn{
+        font-size: 14px;
+    }
+}
     
     .dropdown a:hover {background-color: #3f51b5;}
     
